@@ -1,11 +1,9 @@
-// api/artists.js
-
 import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-  // Caminho para o arquivo artists.json
-  const filePath = path.join(process.cwd(), 'api', 'artists.json');
+  // Caminho para o arquivo artists.json na pasta 'data'
+  const filePath = path.join(process.cwd(), 'data', 'artists.json');
   // Ler o conteúdo do arquivo
   const jsonData = fs.readFileSync(filePath, 'utf8');
   const artistsData = JSON.parse(jsonData);
