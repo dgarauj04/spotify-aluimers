@@ -5,7 +5,7 @@ export const PlaylistContainer = styled.section`
   padding-top: 16px;
   margin: 10px;
   border-radius: 10px;
-  background-color: #121212;
+  background: transparent;
   max-width: 80vw;
   margin-right: 15px;
 `;
