@@ -10,7 +10,7 @@ export const AreaSidebar = styled.div`
 `;
 
 export const SidebarNavigation = styled.nav`
-  background-color: #121212;
+  background: transparent;
   border-radius: 8px;
   padding: 16px 0 0 16px;
 `;
