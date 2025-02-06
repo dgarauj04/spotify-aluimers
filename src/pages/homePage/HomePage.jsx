@@ -36,4 +36,4 @@ export default function HomePage({ searchTerm, setSearchTerm }) {
       </AppTema>
     </>
   );
-}
+};
