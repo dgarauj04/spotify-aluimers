@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AreaPlaylist from "./playlistContent/PlaylistContent";
+import PlaylistContent from "./playlistContent/PlaylistContent";
 import styled from "styled-components";
 
 const MainContainer = styled.main`
@@ -10,7 +10,7 @@ const MainContainer = styled.main`
 export default function MainContent({ artists, searchTerm }) {
   return (
     <MainContainer>
-      <AreaPlaylist artists={artists} searchTerm={searchTerm} />
+      <PlaylistContent artists={artists} searchTerm={searchTerm} />
     </MainContainer>
   );
 }
