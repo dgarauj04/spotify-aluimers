@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AreaLogo = styled.div`
-  background: #121212;
+  background: transparent;
   display: flex;
   border-radius: 8px;
   padding: 16px 0 0 16px;
