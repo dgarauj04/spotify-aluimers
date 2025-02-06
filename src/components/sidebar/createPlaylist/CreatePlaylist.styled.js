@@ -5,7 +5,7 @@ export const SectionPlaylist = styled.section`
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
-  background-color: #242424;
+  background-color: rgb(36 36 36 / 64%);
   color: #b3b3b3;
   font-weight: 600;
   font-size: 14px;
