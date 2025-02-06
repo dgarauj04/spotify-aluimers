@@ -5,6 +5,7 @@ import Footer from '../../components/footer/Footer';
 import axios from 'axios';
 import Header from '../../components/header/Header';
 import styled from 'styled-components';
+import ApiArtists from "../../../api/artists.json"
 
 const AppTema = styled.section`
   background: transparent;
@@ -14,11 +15,16 @@ export default function HomePage({ searchTerm, setSearchTerm }) {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
-    const fetchArtists = async () => {
-      const query = searchTerm ? `?name_like=${searchTerm}` : '';
+    const fetchArtists = () => {
+      const query = searchTerm ? searchTerm.toLowerCase() : '';
       try {
-        const response = await axios.get(`/api/getArtists${query}`);
-        setArtists(response.data);
+        // Filtrar os artistas localmente
+        const filteredArtists = query
+          ? artistsData.artists.filter((artist) =>
+              artist.name.toLowerCase().includes(query)
+            )
+          : artistsData.artists;
+        setArtists(filteredArtists);
       } catch (error) {
         console.error('Erro ao buscar artistas:', error);
       }
