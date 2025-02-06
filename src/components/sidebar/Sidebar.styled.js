@@ -16,7 +16,7 @@ export const SidebarNavigation = styled.nav`
 `;
 
 export const AreaLibrary = styled.div`
-  background-color: #121212;
+  background: transparent;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
