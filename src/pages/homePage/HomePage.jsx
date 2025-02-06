@@ -17,7 +17,7 @@ export default function HomePage({ searchTerm, setSearchTerm }) {
     const fetchArtists = async () => {
       const query = searchTerm ? `?name_like=${searchTerm}` : '';
       try {
-        const response = await axios.get(`/api/artists${query}`);
+        const response = await axios.get(`/api/getArtists${query}`);
         setArtists(response.data);
       } catch (error) {
         console.error('Erro ao buscar artistas:', error);
