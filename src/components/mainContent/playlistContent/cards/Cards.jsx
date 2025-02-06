@@ -16,13 +16,13 @@ const Card = ({ imageSrc, text, background, href }) => (
 export default function Cards() {
   const cardsData = [
     {
-      imageSrc: "../src/assets/playlist/1.jpeg",
+      imageSrc: "../../../../../src/assets/playlist/1.jepg",
       text: "Boas festas",
       background: "rgb(0, 100, 80)",
       href: "https://example.com/boas-festas",
     },
     {
-      imageSrc: "../src/assets/playlist/2.png",
+      imageSrc: "../../../../../src/assets/playlist/2.png",
       text: "Feitos para você",
       background: "rgb(132, 0, 231)",
       href: "https://example.com/feitos-para-voce",
