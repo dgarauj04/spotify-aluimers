@@ -7,7 +7,7 @@ export const HeaderNavigation = styled.nav`
   padding: 16px;
   margin: 10px;
   border-radius: 8px;
-  background-color: #121212;
+  background: transparent;
   padding: 12px;
   margin-left: 330px;
   margin-top: 15px;
