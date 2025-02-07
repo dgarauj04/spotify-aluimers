@@ -5,7 +5,7 @@ import Footer from '../../components/footer/Footer';
 import axios from 'axios';
 import Header from '../../components/header/Header';
 import styled from 'styled-components';
-import ApiArtists from "../../../api/artists.json"
+import apiArtists from "../../../api/artists.json"
 
 const AppTema = styled.section`
   background: transparent;
@@ -20,10 +20,10 @@ export default function HomePage({ searchTerm, setSearchTerm }) {
       try {
         // Filtrar os artistas localmente
         const filteredArtists = query
-          ? artistsData.artists.filter((artist) =>
+          ? apiArtists.artists.filter((artist) =>
               artist.name.toLowerCase().includes(query)
             )
-          : artistsData.artists;
+          : apiArtists.artists;
         setArtists(filteredArtists);
       } catch (error) {
         console.error('Erro ao buscar artistas:', error);
@@ -42,4 +42,4 @@ export default function HomePage({ searchTerm, setSearchTerm }) {
       </AppTema>
     </>
   );
-};
+}
