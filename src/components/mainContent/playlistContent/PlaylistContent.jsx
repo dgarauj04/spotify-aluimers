@@ -11,14 +11,9 @@ import Artistas from "./artists/Artists";
 
 export default function PlaylistContent({ artists = [], searchTerm }) {
   const [showPlaylist, setShowPlaylist] = useState(true);
-
   useEffect(() => {
-    setShowPlaylist(searchTerm === "");
+    setShowPlaylist(searchTerm === '');
   }, [searchTerm]);
-
-  const filteredArtists = artists.filter((artist) =>
-    artist.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
   return (
     <PlaylistContainer>
@@ -31,7 +26,7 @@ export default function PlaylistContent({ artists = [], searchTerm }) {
           <Cards />
         </ResultPlaylist>
       ) : (
-        <Artistas artists={filteredArtists} id="result-artist" />
+        <Artistas artists={artists} id="result-artist" />
       )}
     </PlaylistContainer>
   );
