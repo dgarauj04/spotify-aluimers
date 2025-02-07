@@ -7,15 +7,21 @@ export const Artist = styled.div`
 `;
 
 export const ResultArtist = styled.section`
-  padding: 20px 40px;
+  padding: 20px;
   display: ${(props) => (props.hidden ? "none" : "block")};
+  max-height: 60vh;
+  margin: 12px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0px;
+}
 `;
 
 export const GridContainer = styled.div`
-  grid-gap: 24px;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  min-width: 767px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 1rem 10px;
+  min-width: 40rem;
 `;
 
 export const Play = styled.div`
@@ -45,7 +51,8 @@ export const ArtistCard = styled.div`
   isolation: isolate;
   position: relative;
   transition: background-color 0.3s ease;
-  width: 9rem;
+  width: 9.5rem;
+  padding: 1rem;
   &:hover {
     background-color: #252525;
 
@@ -81,7 +88,7 @@ export const CardText = styled.div`
   text-overflow: ellipsis;
   white-space: nowrap;
   min-height: 50px;
-  padding: 1rem;
+  padding: 0;
 `;
 
 export const TextFormat = styled.div`
