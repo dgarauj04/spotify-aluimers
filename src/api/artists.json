@@ -26,9 +26,9 @@
     },
     {
       "id": 5,
-      "name": "Mc Coringa",
-      "genero": "Funk",
-      "urlImg": "https://i.scdn.co/image/ab67616d00001e02fe8f6dd361ad0f12b88c7f56"
+      "name": "Péricles",
+      "genero": "Pagode",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5eb92597903bb1ce073edf0ed57"
     },
     {
       "id": 6,
@@ -41,6 +41,54 @@
       "name": "Caetano Veloso",
       "genero": "MPB",
       "urlImg": "https://i.scdn.co/image/ab67616100005174e98de50f36cf1aa4bf047757"
+    },
+    {
+      "id": 8,
+      "name": "Delacruz",
+      "genero": "MPB, rap, hip-hop e acústico",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5eb338566f7da918ff85ac96776"
+    },
+    {
+      "id": 9,
+      "name": "Bruno Mars",
+      "genero": "pop, R&B, funk e soul",
+      "urlImg": "https://mhsmedia.marist.net/wp-content/uploads/2023/05/Picture1.png"
+    },
+    {
+      "id": 10,
+      "name": "Teddy Swims",
+      "genero": "pop, country, R&B, funk e soul",
+      "urlImg": "https://i.scdn.co/image/ab67616d0000b273f5ac5b7a18587bcd0cddd886"
+    },
+    {
+      "id": 11,
+      "name": "ED Sheeran",
+      "genero": "pop, folk pop e acústico",
+      "urlImg": "https://i.scdn.co/image/ab67616d0000b273a629dbc92d4dcb0312b45fa2"
+    },
+    {
+      "id": 12,
+      "name": "Eli Soares",
+      "genero": "Gospel",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5eb9a50c73ae4426e14a2b973b2"
+    },
+    {
+      "id": 13,
+      "name": "Pelé Milflows",
+      "genero": "hip hop e rap nacional",
+      "urlImg": "https://i.scdn.co/image/ab67616d0000b2733b09db5c0356ad00d2be5b90"
+    },
+    {
+      "id": 14,
+      "name": "Jadson Moreno",
+      "genero": "Gospel",
+      "urlImg": "https://i.scdn.co/image/ab67616d0000b273a67bef5107f84f1646b3e07d"
+    },
+     {
+      "id": 15,
+      "name": "Grupo Menos É Mais",
+      "genero": "Pagode",
+      "urlImg": "https://i.scdn.co/image/ab67616d0000b2735645e61562deebdda78755b6"
     }
   ]
 }
