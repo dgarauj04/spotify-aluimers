@@ -13,10 +13,8 @@ import {
 } from "./Artists.styled";
 import { FaPlay } from "react-icons/fa6";
 
-export default function Artists({ artists, showResults }) {
-  if (!showResults) return null;
-
-  if (artists.length === 0) {
+export default function Artists({ artists }) {
+  if (!artists || artists.length === 0) {
     return (
       <ResultArtist id="result-artist">
         <p>Nenhum artista encontrado correspondente à sua pesquisa.</p>
