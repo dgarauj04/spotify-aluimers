@@ -13,17 +13,12 @@ const AppTema = styled.section`
 
 export default function HomePage({ searchTerm, setSearchTerm }) {
   const [artists, setArtists] = useState([]);
-
   useEffect(() => {
     const fetchArtists = () => {
       const query = searchTerm ? searchTerm.toLowerCase() : '';
       try {
         // Filtrar os artistas localmente
-        const filteredArtists = query
-          ? apiArtists.artists.filter((artist) =>
-              artist.name.toLowerCase().includes(query)
-            )
-          : apiArtists.artists;
+        const filteredArtists = query ? apiArtists.artists.filter((artist) => artist.name.toLowerCase().includes(query)) : apiArtists.artists;
         setArtists(filteredArtists);
       } catch (error) {
         console.error('Erro ao buscar artistas:', error);
