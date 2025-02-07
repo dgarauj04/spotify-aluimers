@@ -21,7 +21,7 @@ const StyledLink = styled(Link)`
 
 const Header = ({ setSearchTerm }) => {
   const handleInputChange = (event) => {
-    setSearchTerm(event.target.value.toLowerCase());
+    setSearchTerm(event.target.value);
   };
 
   return (
