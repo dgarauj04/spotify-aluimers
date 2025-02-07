@@ -5,7 +5,7 @@ import Footer from '../../components/footer/Footer';
 import axios from 'axios';
 import Header from '../../components/header/Header';
 import styled from 'styled-components';
-import apiArtists from "../../../api/artists.json"
+import apiArtists from "../../api/artists.json"
 
 const AppTema = styled.section`
   background: transparent;
